@@ -30,3 +30,5 @@ profiles
 scripts
 themes
 
+#ruby needed for compass and sass, so ignore rvmrc
+.rvmrc
