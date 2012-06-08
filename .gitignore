@@ -13,6 +13,7 @@ UPGRADE.txt
 robots.txt
 sites/all/README.txt
 sites/all/modules/README.txt
+sites/all/themes/README.txt
 .htaccess
 
 #for non core developer
@@ -27,7 +28,6 @@ misc
 modules     
 profiles
 scripts
-themes
 
 #ruby needed for compass and sass, so ignore rvmrc
 .rvmrc
