@@ -1,4 +1,4 @@
-/**
+/*
  * @file
  * Page Styling
  *
@@ -71,71 +71,67 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/*
- * Body
+/* Body
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000320}}
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans",Arial,sans-serif;
+  font-family: "Lucida Sans", Arial, sans-serif;
   font-style: normal;
-  background: url("../images/bg_body-landing.gif") repeat-x scroll 0 0 #425262 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000326}}
 #page {
   max-width: 100%;
   margin: 6px 0 0;
+  background: url("../images/containa.gif") repeat-y scroll center top #425262;
 }
 
-/*
- * The skip-link link will be completely hidden until a user tabs to the link.
+/* The skip-link link will be completely hidden until a user tabs to the link.
  * See the element-focusable rule in system.base.css.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000336}}
 #skip-link {
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000339}}
 #skip-link a,
 #skip-link a:visited {
   display: block;
   width: 100%;
   padding: 2px 0 3px 0;
   text-align: center;
-  background-color: #666;
-  color: #fff;
+  background-color: #666666;
+  color: white;
 }
 
-/*
- * Header
+/* Header
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000353}}
 #header {
   padding-right: 0px;
   padding-left: 0px;
-  overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000357}}
 #masthead {
-  background: url("../images/containa.gif") repeat-y scroll center top #2b3642 !important;
+  margin: 0;
+  padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000361}}
 #masthead-img {
-  background: url(../images/trefnyBanner.jpg) no-repeat center 6px;
+  background: url(../images/trefnyBanner.jpg) no-repeat center top;
   height: 326px;
   margin: 0 auto;
   position: relative;
   width: 960px;
-  z-index: 999;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000374}}
-#landingTopy {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000369}}
+#mines-top-nav {
   background: url("../images/landing-top.png") no-repeat scroll 0 0 transparent;
   display: block;
   height: 85px;
@@ -146,13 +142,17 @@ body {
   width: 946px;
   z-index: 50;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000380}}
+#mines-top-nav a.logo {
+  z-index: 2;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000383}}
 #gh {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000385}}
 #holder {
   margin: 0 auto;
   padding: 0;
@@ -160,7 +160,7 @@ body {
   z-index: 40;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000390}}
 #landingIMG {
   background-position: center 0;
   background-repeat: no-repeat;
@@ -172,155 +172,202 @@ body {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\0000399}}
 .landingH .logo, .homeskiH .logo {
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003108}}
-#hcRight {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003102}}
+#mines-menu {
+  display: inline;
+  float: right;
   color: #425262;
   font-size: 11px;
   width: 400px;
   padding-right: 15px;
+  z-index: 2;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003114}}
-#hcRight ul {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003110}}
+#mines-menu ul {
   list-style: none outside none;
   margin: 0;
   padding: 0 0 3px;
+  display: inline;
+  float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003119}}
-#hcRight ul li {
-  border-left: 1px solid #6B7B8B;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003116}}
+#mines-menu ul li {
+  border-left: 1px solid #6b7b8b;
   display: inline;
   float: left;
   font-size: 10px;
   margin: 0;
   padding: 0 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003127}}
-#hcRight ul li a {
-  color: #6B7B8B !important;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003124}}
+#mines-menu ul li a {
+  color: #6b7b8b !important;
   padding: 0;
   text-decoration: underline !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003134}}
-#hcRight ul .hcrFirst {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003129}}
+#mines-menu ul .first {
   border: 0 none !important;
   padding-left: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003140}}
-#hcRight a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003133}}
+#mines-menu a {
   color: #b03514;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003144}}
-#hcRight .noB {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003136}}
+#mines-menu .no-border {
   border: 0 none !important;
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003150}}
-#hcRight span {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003141}}
+#mines-menu span {
   display: block;
   text-align: right;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003156}}
-.searchText {
-  border: 1px solid #6B7B8B;
-  color: #6B7B8B;
-  font-family: Verdana,Arial,Helvetica,sans-serif;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003145}}
+.search-text {
+  border: 1px solid #6b7b8b;
+  color: #6b7b8b;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 9px;
   margin: -2px 5px 0 3px;
   padding: 1px 3px;
   width: 94px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003166}}
-.searchBtn {
-  background-color: #6B7B8B;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003154}}
+.search-button {
+  background-color: #6b7b8b;
   border: 0 none;
-  color: #FFFFFF;
-  font-family: Verdana,Arial,Helvetica,sans-serif;
+  color: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 9px;
   margin: -5px 0 0;
   padding: 1px 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003176}}
-.floatRight {
-  float: right;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003164}}
 #logo {
-  /* Wrapping link for logo */
   float: left;
-  /* LTR */
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003169}}
 #logo img {
   vertical-align: bottom;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003191}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003173}}
 #name-and-slogan {
-  /* Wrapper for website name and slogan */
   float: left;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003176}}
 #site-name {
-  /* The name of the website */
   margin: 0;
   font-size: 2em;
   line-height: 1.5em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003181}}
 #site-name a:link,
 #site-name a:visited {
-  color: #000;
+  color: black;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003187}}
 #site-name a:hover,
 #site-name a:focus {
   text-decoration: underline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003192}}
 #site-slogan {
-  /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003217}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003196}}
 .region-header {
-  /* Wrapper for any blocks placed in the header region */
   clear: both;
-  /* Clear the logo */
 }
 
-/*
- * Main (container for everything else)
- */
-/*
- * Content
- */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003238}}
-.breadcrumb {
-  /* The path to the current page in the form of a list of links */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003199}}
+#header-navigation {
+  z-index: 999;
+  width: 100%;
+  background-color: #333333;
+  /* Superfish Overrides */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003205}}
+#header-navigation #block-superfish-1 {
+  width: 1047px;
+  margin: 0 auto;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003209}}
+#header-navigation .sf-menu {
+  margin-bottom: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003211}}
+#header-navigation .sf-menu li {
+  height: 41px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003213}}
+#header-navigation .sf-menu ul {
+  position: relative;
+  top: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003216}}
+#header-navigation .sf-menu ul li {
+  height: 41px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003218}}
+#header-navigation .sf-menu li:hover, #header-navigation .sf-menu li.sfHover, #header-navigation .sf-menu li.active a, #header-navigation .sf-menu a:focus, #header-navigation .sf-menu a:hover, #header-navigation .sf-menu a:active,
+#header-navigation .sf-menu .sf-navbar li li, #header-navigation .sf-menu .sf-navbar li ul {
+  background: none repeat scroll 0 0 #b03514;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003223}}
+#header-navigation .sf-hidden {
+  display: none;
+}
+
+/* Main (container for everything else)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003229}}
+#main {
+  width: 1047px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #425262;
+}
+
+/* Content
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003239}}
+#content {
+  background-color: #425262;
+  padding-right: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003242}}
+#content #inner-content {
+  background-color: white;
+  padding: 15px 30px 60px;
+  color: #2a3642;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003250}}
 .breadcrumb ol {
   margin: 0;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003254}}
 .breadcrumb li {
   display: inline;
   list-style-type: none;
@@ -328,156 +375,98 @@ body {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003256}}
-h1.title,
-h2.node-title,
-h2.block-title,
-h2.title,
-h2.comment-form,
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003266}}
 h3.title {
-  /* Comment title */
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003269}}
 tr.even {
-  /* Some tables have rows marked even or odd. */
-  /* background-color: #eee; */
-  /* Drupal core uses a #eee background */
+  /* background-color: #eee */ /* Drupal core uses a #eee background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003272}}
 tr.odd {
-  /* background-color: #eee; */
-  /* Drupal core uses a #eee background */
+  /* background-color: #eee */ /* Drupal core uses a #eee background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003275}}
 div.messages {
-  /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */
   margin: 1.5em 0;
-  /* Drupal core uses "6px 0" margin */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003278}}
 div.messages ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003277}}
-div.status {
-  /* Normal priority messages */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003285}}
 div.warning,
 tr.warning {
-  /* Medium priority messages */
-  /* border: 1px solid #f0c020; */
-  /* Drupal core uses: 1px solid #f0c020 */
+  /* border: 1px solid #f0c020 */ /* Drupal core uses: 1px solid #f0c020 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003286}}
-div.error,
-tr.error {
-  /* High priority messages. See also the .error declaration below. */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003292}}
 .error {
-  /* Errors that are separate from div.messages status messages. */
-  /* color: #e55; */
-  /* Drupal core uses a #e55 background */
+  /* color: #e55 */ /* Drupal core uses a #e55 background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003293}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003295}}
 .warning {
-  /* Warnings that are separate from div.messages status messages. */
-  /* color: #e09010; */
-  /* Drupal core uses a #e09010 background */
+  /* color: #e09010 */ /* Drupal core uses a #e09010 background */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003297}}
-.tabs {
-  /* See also the tabs.css file. */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003300}}
-.region-help {
-  /* Help text on a page */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003303}}
-.more-help-link {
-  /* Link to more help */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003306}}
-.region-content {
-  /* Wrapper for the actual page content */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003306}}
 ul.inline {
-  /* List of links generated by theme_links() */
   display: inline;
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003310}}
 ul.inline li {
   display: inline;
   list-style-type: none;
   padding: 0 1em 0 0;
-  /* LTR */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003315}}
 span.field-label {
-  /* The inline field label used by the Fences module */
   padding: 0 1em 0 0;
-  /* LTR */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003318}}
 .item-list .pager {
-  /* A list of page numbers when more than 1 page of content is available */
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003321}}
 .item-list .pager li {
-  /* Each page number in the pager list */
   padding: 0 0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003331}}
-.feed-icon {
-  /* The link to the RSS or Atom feed for the current list of content */
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003334}}
-.more-link {
-  /* Aggregator, blog, and forum more link */
-}
-
-/*
- * First sidebar (on left in LTR languages, on right in RTL)
+/* First sidebar (on left in LTR languages, on right in RTL)
  *
  * Remember to NOT add padding or margin to your .region-sidebar-first
  * (see the layout.css file.)
  */
-/*
- * Second sidebar (on right in LTR languages, on left in RTL)
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003336}}
+.sidebar-first .region-sidebar-first {
+  padding: 15px 17px 60px;
+  background-color: #d4d4d5;
+  width: 18%;
+  -webkit-border-radius: 0px 0px 7px 7px;
+  -moz-border-radius: 0px 0px 7px 7px;
+  -ms-border-radius: 0px 0px 7px 7px;
+  -o-border-radius: 0px 0px 7px 7px;
+  border-radius: 0px 0px 7px 7px;
+  border-bottom: solid 10px #b03514;
+  margin: 0px 1% 0px 1%;
+}
+
+/* Second sidebar (on right in LTR languages, on left in RTL)
  *
  * Remember to NOT add padding or margin to your .region-sidebar-second
  * (see the layout.css file.)
  */
-/*
- * Footer
+/* Footer
  */
-/*
- * Page bottom
+/* Page bottom
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.scss}line{font-family:\00003368}}
-.region-bottom {
-  /* Wrapper for any blocks placed in the page bottom region */
-}

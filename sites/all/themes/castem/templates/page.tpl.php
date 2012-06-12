@@ -56,7 +56,7 @@
  * - $page['header']: Items for the header region.
  * - $page['navigation']: Items for the navigation region, below the main menu (if any).
  * - $page['help']: Dynamic help text, mostly for admin pages.
- * - $page['highlighted']: Items for the highlighted content region.
+ * - $pahrefge['highlighted']: Items for the highlighted content region.
  * - $page['content']: The main content of the current page.
  * - $page['sidebar_first']: Items for the first sidebar.
  * - $page['sidebar_second']: Items for the second sidebar.
@@ -75,31 +75,43 @@
   <header id="header" role="banner">
     <div id="masthead">
       <div id="masthead-img">
-        <div style="z-index:5 !important;" id="landingTopy">
-          <a class="logo" href="/" style="z-index:2 !important;">
+        <div id="mines-top-nav">
+          <a class="logo" href="/" >
             <img alt="Colorado Mines" src="/sites/all/themes/castem/images/trefnylogo.gif">
           </a>
-        <div style="z-index:2 !important;" class="floatRight" id="hcRight">
+        <div id="mines-menu">
           <form style="margin:0" action="http://sponge.mines.edu/search" method="get">
-            <ul class="floatRight">
-              <li class="hcrFirst"><a href="/Mines-Home-Link">Mines Home</a></li>
+            <ul>
+              <li class="first"><a href="/Mines-Home-Link">Mines Home</a></li>
               <li><a href="/GH-News-Events">News &amp; Events</a></li>
               <li><a href="/GH-RSS">RSS</a></li>
               <li><a href="/GH-Contact-Us">Contact Us</a></li>
-              <li class="noB">
+              <li class="no-border">
                 <script type="text/javascript">
-                $(function(){
+                (function ($) {
+                  $(document).ready(function(){
 
-                $("#searchText").focus( function() {
-                $("#searchText").attr("value","");
+                    var superfish1 = "#superfish-1 li > ul";
 
-                  } );
-                 });
+                    $(superfish1).hide('sf-hidden');
+
+                    $("#superfish-1 > li").hover(function() {
+                      $(this).children('ul').show(200);
+                    }, function() {
+                      $(this).children('ul').fadeOut(200);
+                      $(this).removeClass('sfHover');
+                    });
+
+                    $("#searchText").focus( function() {
+                      $("#searchText").attr("value","");
+                    });
+                  });
+                })(jQuery);
                 </script>
-                <input type="text" value="Search" class="searchText" id="searchText" name="q">
+                <input type="text" value="Search" class="search-text" id="search-text" name="q">
               </li>
-              <li class="noB">
-                <input type="submit" class="searchBtn" value="Submit" name="searchy">
+              <li class="no-border">
+                <input type="submit" class="search-button" value="Submit" name="searchy">
               </li>
             </ul>
             <input type="hidden" value="default_collection" name="site">
@@ -108,10 +120,8 @@
             <input type="hidden" value="xml_no_dtd" name="output">
           </form>
           <span class="clear">Faculty, Staff, &amp; Current Students: Go <a href="http://inside.mines.edu/">inside.mines</a></span>
-
         </div>
       </div>
-
         <?php /* Commenting out site logo and name
 
         <?php if ($logo): ?>
@@ -133,10 +143,10 @@
         <?php endif; ?>
 
         */?>
-
       </div>
     </div>
 
+    <? /* Remove secondary menu
     <?php if ($secondary_menu): ?>
       <nav id="secondary-menu" role="navigation">
         <?php print theme('links__system_secondary_menu', array(
@@ -152,32 +162,37 @@
         )); ?>
       </nav>
     <?php endif; ?>
-
-    <?php print render($page['header']); ?>
+    */ ?>
+    <div id="header-navigation">
+      <?php print render($page['header']); ?>
+    </div>
 
   </header>
 
   <div id="main">
 
     <div id="content" class="column" role="main">
-      <?php print render($page['highlighted']); ?>
-      <?php print $breadcrumb; ?>
-      <a id="main-content"></a>
-      <?php print render($title_prefix); ?>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
-      <?php print $messages; ?>
-      <?php print render($tabs); ?>
-      <?php print render($page['help']); ?>
-      <?php if ($action_links): ?>
-        <ul class="action-links"><?php print render($action_links); ?></ul>
-      <?php endif; ?>
-      <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
+      <div id="inner-content">
+        <?php print render($page['highlighted']); ?>
+        <?php print $breadcrumb; ?>
+        <a id="main-content"></a>
+        <?php print render($title_prefix); ?>
+        <?php if ($title): ?>
+          <h1 class="title" id="page-title"><?php print $title; ?></h1>
+        <?php endif; ?>
+        <?php print render($title_suffix); ?>
+        <?php print $messages; ?>
+        <?php print render($tabs); ?>
+        <?php print render($page['help']); ?>
+        <?php if ($action_links): ?>
+          <ul class="action-links"><?php print render($action_links); ?></ul>
+        <?php endif; ?>
+        <?php print render($page['content']); ?>
+        <?php print $feed_icons; ?>
+      </div>
     </div><!-- /#content -->
 
+    <?php /* There was a second menu here
     <div id="navigation">
 
       <?php if ($main_menu): ?>
@@ -204,6 +219,7 @@
       <?php print render($page['navigation']); ?>
 
     </div><!-- /#navigation -->
+    */ ?>
 
     <?php
       // Render the sidebars to see if there's anything in them.
@@ -220,7 +236,7 @@
 
   </div><!-- /#main -->
 
-  <?php print render($page['footer']); ?>
+  <?php /*print render($page['footer']); */?>
 
 </div><!-- /#page -->
 
