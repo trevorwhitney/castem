@@ -31,3 +31,6 @@ scripts
 
 #ruby needed for compass and sass, so ignore rvmrc
 .rvmrc
+
+#ignore sass cache
+sites/all/themes/castem/.sass-cache
