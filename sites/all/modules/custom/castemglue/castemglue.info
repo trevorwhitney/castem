@@ -1,0 +1,6 @@
+name = "Castem Glue"
+description = "Custom module for fixing up Castem"
+core = 7.x
+package = "castem"
+
+dependencies[] = views

@@ -1,0 +1,20 @@
+<?php
+  /**
+  * Implements hook_views_api().
+  */
+  function castemglue_views_api() {
+    return array(
+      'api' => '3.0',
+    );
+  }
+
+  /**
+  * Implements hook_views_default_views().
+  */
+  function castemglue_views_default_views() {
+    $views = array();
+
+    include(dirname(__FILE__) ."/view.fellows.inc");
+    $views[$view->name] = $view;
+    return $views;
+  }
