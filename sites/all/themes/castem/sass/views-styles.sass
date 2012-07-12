@@ -1,0 +1,68 @@
+/**
+ * @file
+ * Views Styling
+ */
+
+@import "base"
+
+
+/*
+ * Views' admin tabs
+ *
+ * The views admin tabs use the same classes as the secondary tabs. We prevent
+ * some of our tab styling from bleeding into (and breaking) the Views admin
+ * pages. If your sub-theme isn't used for admin pages, you can remove this
+ * entire section.
+ */
+
+.views-displays .secondary
+  li
+    float: none
+    margin: 0 6px 0
+
+  a:link,
+  a:visited
+    @include single-text-shadow(none)
+    padding: 2px 7px 3px
+
+  .open > a
+    @include border-radius(7px 7px 0 0)
+    &:hover
+      color: #333
+
+  .action-list li
+    margin: 0
+    &:first-child
+      @include border-radius(0 7px 0 0)
+
+    &:last-child
+      @include border-radius(0 0 7px 7px)
+
+/* Fellows view styles */
+div.view-fellows div.view-content table.views-table
+  width: 100%
+tr.fellow-listing
+  background-color: #FFF
+  border: none
+  td
+    vertical-align: top
+    padding-bottom: 15px
+  td.fellow-list-pic
+    width: 128px
+  td.fellow-list-info
+    padding-left: 20px
+    span
+      font-weight: bold
+      font-size: 18pt
+      padding-right: 5px
+    div
+      padding-top: 10px
+tr.views-row-last
+  td
+    padding-bottom: 0
+  
+.user-picture a > img
+  border: #000 solid 1px
+  width: 128px
+
+
