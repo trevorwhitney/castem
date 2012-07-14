@@ -2,6 +2,7 @@
  * @file
  * RTL companion for the tabs.css file.
  */
+/* CASTEM specific custom mixins */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/tabs-rtl\.scss}line{font-family:\0000311}}
 ul.primary li,
 ul.secondary li {

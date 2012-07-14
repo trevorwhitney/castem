@@ -4,6 +4,7 @@
  *
  * Add wireframes to the basic layout elements.
  */
+/* CASTEM specific custom mixins */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/wireframes\.scss}line{font-family:\0000319}}
 .with-wireframes #header,
 .with-wireframes #main,

@@ -2,6 +2,7 @@
  * @file
  * Views Styling
  */
+/* CASTEM specific custom mixins */
 /* Views' admin tabs
  *
  * The views admin tabs use the same classes as the secondary tabs. We prevent
@@ -97,4 +98,35 @@ tr.views-row-last td {
 .user-picture a > img {
   border: black solid 1px;
   width: 128px;
+}
+
+/* News view styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000358}}
+div.news-item div.header {
+  background: url("../images/speckles.png") repeat scroll 0 0 rgba(176, 53, 20, 0.9);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 -2px 3px 0 inset, rgba(0, 0, 0, 0.3) 0 1px 3px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 -2px 3px 0 inset, rgba(0, 0, 0, 0.3) 0 1px 3px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 -2px 3px 0 inset, rgba(0, 0, 0, 0.3) 0 1px 3px 0;
+  height: 35px;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000363}}
+div.news-item div.header h2 {
+  color: white;
+  display: block;
+  float: left;
+  line-height: 1em;
+  margin: 5px 0 0 3px;
+  font-weight: bold;
+  font-size: 20pt;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000371}}
+div.news-item div.content {
+  margin: 0 0 0 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px;
+  border: 2px solid rgba(213, 99, 68, 0.4);
+  border-top: none;
+  background-color: #d4d4d5;
 }

@@ -12,7 +12,6 @@
 @import "compass/utilities/general/float"
 @import "compass/css3"
 
-
 /*
  * Body
  */
@@ -236,9 +235,22 @@ body
  * Content
  */
 
+/* Front Page Content */
+div.mission-statement
+  +pretty-box
+  margin-bottom: 25px
+  div.content p
+    padding: 7px 5px 3px
+
+ul
+  list-style: circle inside
+  li
+    margin-left: 1em
+
 #content
   background-color: #425262
   padding-right: 0px
+  padding-left: 0px
   #inner-content
     background-color: #FFFFFF
     padding: 15px 30px 60px

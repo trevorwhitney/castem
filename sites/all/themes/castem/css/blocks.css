@@ -2,9 +2,11 @@
  * @file
  * Block Styling
  */
+/* CASTEM specific custom mixins */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/blocks\.scss}line{font-family:\000039}}
 .block {
   /* Block wrapper */
+  margin-bottom: 1.5em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/blocks\.scss}line{font-family:\0000312}}
 .block.first {
