@@ -38,35 +38,94 @@
     &:last-child
       @include border-radius(0 0 7px 7px)
 
-/* Fellows view styles */
-div.view-fellows div.view-content table.views-table
-  width: 100%
-tr.fellow-listing
-  background-color: #FFF
-  border: none
-  td
+/* Fellow list styles */
+div.view-fellows
+  div.views-row-odd
+    background: #D4D4D5
+    border-right: #425262 2px solid
+    border-left: #425262 2px solid
+    div.img
+      float: left
+      img
+        border-right: #333333 2px solid
+    div.content
+      float: left
+      text-align: left
+      margin-left: 10px
+      h2.name
+        text-align: left
+  div.views-row-even
+    background: #425262
+    color: #FFF
+    border-right: #425262 2px solid
+    border-left: #425262 2px solid
+    border-top: #333333 2px solid
+    border-bottom: #333333 2px solid
+    div.img
+      float: right
+      img
+        border-left: #333333 2px solid
+    div.content
+      float: right
+      text-align: right
+      margin-right: 10px
+      h2.name
+        text-align: right
+  div.views-row-first
+    border-top: #425262 2px solid
+  div.views-row-last
+    border-bottom: #425262 2px solid
+div.fellow
+  div.img
+    overflow: hidden
+    height: 165px
+  div.content
     vertical-align: top
-    padding-bottom: 15px
-  td.fellow-list-pic
-    width: 128px
-  td.fellow-list-info
-    padding-left: 20px
-    span
-      font-weight: bold
+    h2.name
+      display:block
       font-size: 18pt
-      padding-right: 5px
-    div
-      padding-top: 10px
-tr.views-row-last
-  td
-    padding-bottom: 0
-  
-.user-picture a > img
-  border: #000 solid 1px
-  width: 128px
+      font-weight: bold
+      padding-bottom: 8px
+      padding-top: 5px
 
 /* News view styles */
+div.clear
+  clear: both
+  float: none
+div.view-news
+  div.views-row
+    margin-top: 25px
+div.views-row-first
+  margin-top: 0px
 div.news-item
+  float: left
   +pretty-box
-
+  div.header
+    h2 a
+      color: #FFF
+      text-decoration: none
+      font-size: 18pt
+      position: relative
+      bottom: 3px
+      &:hover
+        text-decoration: underline
+  div.content
+    float: left
+    div.inner-content
+      padding: 5px
+      float: left
+      div.news-image
+        float: left
+        img
+          border: #425262 1px solid
+          margin-right: 10px
+      div.news-body
+        p
+          margin-left: 15px
+  span.created-by
+    float: left
+    margin-top: 5px
+  span.created-on
+    float: right
+    margin-top: 5px
 

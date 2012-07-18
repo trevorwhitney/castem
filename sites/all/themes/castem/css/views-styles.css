@@ -54,53 +54,105 @@
   border-radius: 0 0 7px 7px;
 }
 
-/* Fellows view styles */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000342}}
-div.view-fellows div.view-content table.views-table {
-  width: 100%;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000344}}
-tr.fellow-listing {
-  background-color: white;
-  border: none;
+/* Fellow list styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000343}}
+div.view-fellows div.views-row-odd {
+  background: #d4d4d5;
+  border-right: #425262 2px solid;
+  border-left: #425262 2px solid;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000347}}
-tr.fellow-listing td {
-  vertical-align: top;
-  padding-bottom: 15px;
+div.view-fellows div.views-row-odd div.img {
+  float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000350}}
-tr.fellow-listing td.fellow-list-pic {
-  width: 128px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000349}}
+div.view-fellows div.views-row-odd div.img img {
+  border-right: #333333 2px solid;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000352}}
-tr.fellow-listing td.fellow-list-info {
-  padding-left: 20px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000351}}
+div.view-fellows div.views-row-odd div.content {
+  float: left;
+  text-align: left;
+  margin-left: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000354}}
-tr.fellow-listing td.fellow-list-info span {
-  font-weight: bold;
-  font-size: 18pt;
-  padding-right: 5px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000355}}
+div.view-fellows div.views-row-odd div.content h2.name {
+  text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000358}}
-tr.fellow-listing td.fellow-list-info div {
-  padding-top: 10px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000357}}
+div.view-fellows div.views-row-even {
+  background: #425262;
+  color: white;
+  border-right: #425262 2px solid;
+  border-left: #425262 2px solid;
+  border-top: #333333 2px solid;
+  border-bottom: #333333 2px solid;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000361}}
-tr.views-row-last td {
-  padding-bottom: 0;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000364}}
-.user-picture a > img {
-  border: black solid 1px;
-  width: 128px;
+div.view-fellows div.views-row-even div.img {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000366}}
+div.view-fellows div.views-row-even div.img img {
+  border-left: #333333 2px solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000368}}
+div.view-fellows div.views-row-even div.content {
+  float: right;
+  text-align: right;
+  margin-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000372}}
+div.view-fellows div.views-row-even div.content h2.name {
+  text-align: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000374}}
+div.view-fellows div.views-row-first {
+  border-top: #425262 2px solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000376}}
+div.view-fellows div.views-row-last {
+  border-bottom: #425262 2px solid;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000379}}
+div.fellow div.img {
+  overflow: hidden;
+  height: 165px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000382}}
+div.fellow div.content {
+  vertical-align: top;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000384}}
+div.fellow div.content h2.name {
+  font-size: 18pt;
+  font-weight: bold;
+  padding-bottom: 8px;
+  padding-top: 5px;
 }
 
 /* News view styles */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000392}}
+div.clear {
+  clear: both;
+  float: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000396}}
+div.view-news div.views-row {
+  margin-top: 25px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\0000398}}
+div.views-row-first {
+  margin-top: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003100}}
+div.news-item {
+  float: left;
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000358}}
 div.news-item div.header {
   background: url("../images/speckles.png") repeat scroll 0 0 rgba(176, 53, 20, 0.9);
@@ -129,4 +181,48 @@ div.news-item div.content {
   border: 2px solid rgba(213, 99, 68, 0.4);
   border-top: none;
   background-color: #d4d4d5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003104}}
+div.news-item div.header h2 a {
+  color: white;
+  text-decoration: none;
+  font-size: 18pt;
+  position: relative;
+  bottom: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003110}}
+div.news-item div.header h2 a:hover {
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003112}}
+div.news-item div.content {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003114}}
+div.news-item div.content div.inner-content {
+  padding: 5px;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003117}}
+div.news-item div.content div.inner-content div.news-image {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003119}}
+div.news-item div.content div.inner-content div.news-image img {
+  border: #425262 1px solid;
+  margin-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003123}}
+div.news-item div.content div.inner-content div.news-body p {
+  margin-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003125}}
+div.news-item span.created-by {
+  float: left;
+  margin-top: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003128}}
+div.news-item span.created-on {
+  float: right;
+  margin-top: 5px;
 }

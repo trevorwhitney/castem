@@ -23,24 +23,16 @@
  * @ingroup views_templates
  */
 ?>
-<div class="news-item">
-  <div class="header">
-    <h2><?php print $fields['title']->content; ?></h2>
+<div class="fellow">
+  <div class="img">
+    <?php print $fields['picture']->content;
+      $name = ucwords($fields['field_first_name']->content.
+        ' '.$fields['field_last_name']->content);
+    ?>
   </div>
   <div class="content">
-    <div class="inner-content">
-      <?php print $fields['field_image']->content; ?>
-      <?php print $fields['body']->content; ?>
-    </div>
+    <h2 class="name"><?php print $name; ?></h2>
+    <?php print $fields['field_user_bio']->content; ?>
   </div>
-  <?php 
-    $user = user_load($fields['uid']->raw);
-    $first_name = ucwords($user->field_first_name['und'][0]['value']);
-    $last_name = ucwords($user->field_last_name['und'][0]['value']);
-    $path = "/users/$user->name";
-  ?>
-  <span class="created-by"><?php 
-    print "<a href=\"$path\">$first_name $last_name</a>"; ?></span>
-  <span class="created-on"><?php print $fields['created']->content; ?>
 </div>
 <div class="clear"></div>
