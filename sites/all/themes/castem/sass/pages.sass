@@ -25,7 +25,7 @@ body
 #page
   max-width: 100%
   margin: 6px 0 0
-  background: url("../images/containa.gif") repeat-y scroll center top #425262
+  background: url("../images/containa.gif") repeat-y scroll center top $mines_dark_grey
 
 /*
  * The skip-link link will be completely hidden until a user tabs to the link.
@@ -198,7 +198,7 @@ body
 #header-navigation
   z-index: 999
   width: 100%
-  background-color: #333333
+  background-color: $mines_dark_grey
 
   /* Superfish Overrides */
   #block-superfish-1
@@ -207,8 +207,10 @@ body
 
   .sf-menu
     margin-bottom: 0px
+    background-color: $mines_dark_grey
     li
       height: 41px
+      background-color: $mines_dark_grey
     ul
       position: relative
       top: 0px
@@ -216,7 +218,7 @@ body
         height: 41px
     li:hover, li.sfHover, li.active a, a:focus, a:hover, a:active, 
     .sf-navbar li li, .sf-navbar li ul
-      background: none repeat scroll 0 0 #B03514
+      background: none repeat scroll 0 0 $mines_orange
       color: #FFFFFF
 
   .sf-hidden
@@ -229,7 +231,7 @@ body
   width: 1047px
   margin: 0 auto
   padding: 0
-  background-color: #425262
+  background-color: $mines_blue_2
 
 /*
  * Content
@@ -237,7 +239,7 @@ body
 
 /* Front Page Content */
 div.mission-statement
-  +pretty-box
+  +pretty-orange-box
   margin-bottom: 25px
   div.content p
     padding: 7px 5px 3px
@@ -347,10 +349,10 @@ span.field-label /* The inline field label used by the Fences module */
 
 .sidebar-first .region-sidebar-first
   padding: 15px 17px 60px
-  background-color: #D4D4D5
+  background-color: $mines_light_grey
   width: 18%
   +border-radius(0px 0px 7px 7px)
-  border-bottom: solid 10px #B03514
+  border-bottom: solid 10px $mines_orange
   margin: 0px 1% 0px 1%
 
 /*

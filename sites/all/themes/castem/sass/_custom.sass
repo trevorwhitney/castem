@@ -7,6 +7,15 @@
 // curly brackets:
 //   @include mix-in-name
 
+$mines_blue: rgb(33, 49, 77)
+$mines_orange: rgb(210, 73, 42)
+$mines_light_blue: rgb(146, 162, 189)
+
+$mines_blue_2: rgb(38, 63, 106)
+$mines_light_blue_2: rgb(206, 213, 221)
+$mines_light_grey: rgb(178, 180, 179)
+$mines_dark_grey: rgb(139, 141, 142)
+
 
 // element-invisible as defined by http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 @mixin element-invisible 
@@ -56,21 +65,40 @@
 /* CASTEM specific custom mixins */
 @mixin pretty-box
   div.header
-    background: url("../images/speckles.png") repeat scroll 0 0 rgba(176, 53, 20, 0.9)
     +box-shadow(rgba(0, 0, 0, 0.5) 0 -2px 3px 0 inset, rgba(0, 0, 0, 0.3) 0 1px 3px 0)
     height: 35px
     padding: 0
-    h2
+    h2, h3
       color: #FFFFFF
       display: block
       float: left
       line-height: 1em
       margin: 5px 0 0 3px
       font-weight: bold
+    h2
       font-size: 20pt
+    h3
+      font-size: 16pt
   div.content
     margin: 0 0 0 0
     +box-shadow(rgba(0, 0, 0, 0.3) 0px 0px 1px)
-    border: 2px solid rgba(213,99, 68, 0.4)
     border-top: none
     background-color: #D4D4D5
+
+@mixin pretty-orange-box
+  +pretty-box
+  div.header
+    background: url("../images/speckles.png") repeat scroll 0 0 rgba(210, 73, 42, 0.9)
+  div.content
+    border-right: 2px solid rgba(213,99, 68, 0.4)
+    border-left: 2px solid rgba(213,99, 68, 0.4)
+    border-bottom: 2px solid rgba(213,99, 68, 0.4)
+
+@mixin pretty-blue-box
+  +pretty-box
+  div.header
+    background: url("../images/swirls.png") repeat scroll 0 0 rgba(38, 63, 106, 0.9)
+  div.content
+    border-right: 2px solid rgba(38, 63, 106, 0.4)
+    border-left: 2px solid rgba(38, 63, 106, 0.4)
+    border-bottom: 2px solid rgba(38, 63, 106, 0.4)

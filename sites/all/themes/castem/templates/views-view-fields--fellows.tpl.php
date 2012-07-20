@@ -23,6 +23,13 @@
  * @ingroup views_templates
  */
 ?>
+<?php
+  //$user = user_load($fields['uid']->raw);
+  //$first_name = ucwords($user->field_first_name['und'][0]['value']);
+  //$last_name = ucwords($user->field_last_name['und'][0]['value']);
+  $path = "/users"."/".$fields['name']->raw;
+  //dpm($fields['name']);view
+?>
 <div class="fellow">
   <div class="img">
     <?php print $fields['picture']->content;
@@ -31,8 +38,9 @@
     ?>
   </div>
   <div class="content">
-    <h2 class="name"><?php print $name; ?></h2>
-    <?php print $fields['field_user_bio']->content; ?>
+    <h2 class="name"><a href="<?php print $path; ?>"><?php 
+      print $name; ?></a></h2>
+    <?php print $fields['field_short_bio']->content; ?>
   </div>
 </div>
 <div class="clear"></div>
