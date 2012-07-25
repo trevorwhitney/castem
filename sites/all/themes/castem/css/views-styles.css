@@ -321,10 +321,11 @@ div#user-profile div.content div#user-bio {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003176}}
 div#user-profile div.content div#user-bio p {
   padding-bottom: 11px;
+  text-align: justify;
 }
 
 /* Lesson Plans */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003180}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003181}}
 aside#lesson-plans {
   display: inline-block;
   width: 30%;
@@ -376,7 +377,7 @@ aside#lesson-plans div.content {
   border-left: 2px solid rgba(38, 63, 106, 0.4);
   border-bottom: 2px solid rgba(38, 63, 106, 0.4);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003188}}
 aside#lesson-plans div.header {
   -webkit-border-radius: 7px 7px 0 0;
   -moz-border-radius: 7px 7px 0 0;
@@ -384,7 +385,58 @@ aside#lesson-plans div.header {
   -o-border-radius: 7px 7px 0 0;
   border-radius: 7px 7px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003190}}
 aside#lesson-plans div.header h3 {
   margin-left: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003192}}
+aside#lesson-plans div.header a.add-lesson {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003194}}
+aside#lesson-plans div.header a.add-lesson img {
+  position: relative;
+  top: 8px;
+  right: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003198}}
+aside#lesson-plans p.no-lessons {
+  padding: 5px;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003201}}
+aside#lesson-plans div.lesson {
+  padding: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003203}}
+aside#lesson-plans div.lesson h4 {
+  margin-bottom: 2px;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003206}}
+aside#lesson-plans div.lesson h4.created-at {
+  float: right;
+  font-style: italic;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003209}}
+aside#lesson-plans div.lesson p.lesson-description {
+  text-align: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003211}}
+aside#lesson-plans div.lesson span.download-lesson {
+  margin-top: 3px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003213}}
+aside#lesson-plans div.lesson span.download-lesson a {
+  text-decoration: none;
+  color: #d2492a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003216}}
+aside#lesson-plans div.lesson span.download-lesson a:hover {
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003218}}
+aside#lesson-plans div.lesson span.download-lesson a img {
+  position: relative;
+  top: 1px;
 }

@@ -175,6 +175,7 @@ div#user-profile
       display: inline-block
       p
         padding-bottom: 11px
+        text-align: justify
 
 /* Lesson Plans */
 aside#lesson-plans
@@ -188,4 +189,33 @@ aside#lesson-plans
     +border-radius(7px 7px 0 0)
     h3
       margin-left: 8px
+    a.add-lesson
+      float: right
+      img
+        position: relative
+        top: 8px
+        right: 8px
+  p.no-lessons
+    padding: 5px
+    display: block
+  div.lesson
+    padding: 5px
+    h4
+      margin-bottom: 2px
+      display: inline
+    h4.created-at
+      float: right
+      font-style: italic
+    p.lesson-description
+      text-align: left
+    span.download-lesson
+      margin-top: 3px
+      a
+        text-decoration: none
+        color: $mines_orange
+        &:hover
+          text-decoration: underline
+        img
+          position: relative
+          top: 1px
 
