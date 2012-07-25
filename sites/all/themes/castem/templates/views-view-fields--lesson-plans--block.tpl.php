@@ -23,9 +23,22 @@
  * @ingroup views_templates
  */
 ?>
+<?php 
+  $download_image = array(
+    'path' => "/sites/all/themes/castem/images/page_white_put.png",
+    'alt' => 'download lesson',
+    'title' => 'download this lesson plan',
+    'attributes' => array('class' => 'download-lesson-img'),
+  );
+?>
 <div class="lesson">
   <h4 class="lesson-title"><?php 
     print $fields['title']->content; ?></h4>
+  <h4 class="created-at"><?php
+    print $fields['created']->content; ?></h4>
   <p class="lesson-description"><?php 
-    print $fields['view_node']->content; ?></p>
+    print $fields['field_short_summary']->content; ?></p>
+  <span class="download-lesson"><a href="<?php 
+    print $fields['field_lesson_plan_file']->content;?>"><?php
+      print theme_image($download_image); ?>&nbsp;Download</a></span>
 </div>
