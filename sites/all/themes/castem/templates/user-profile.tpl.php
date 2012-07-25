@@ -3,7 +3,20 @@
   $path = $path['destination'];
   $path_a = explode('/', $path);
   $uid = $path_a[1];
-  $edit_path = "/user/$uid/edit";
+  $edit_path = "#overlay=user/$uid/edit";
+
+  $edit_image = array(
+    'path' => "/sites/all/themes/castem/images/user_edit.png",
+    'alt' => 'edit profile',
+    'title' => 'edit this profile',
+    'attributes' => array('class' => 'edit-profile-img'),
+  );
+  $add_image = array(
+    'path' => "/sites/all/themes/castem/images/add.png",
+    'alt' => 'add lesson plan',
+    'title' => 'Upload a new lesson plan',
+    'attributes' => array('class' => 'new-lesson-img'),
+  );
 ?>
 <div id="user-profile">
   <div class="user-header">
@@ -17,15 +30,9 @@
       <span class="program">Bechtel</span>
     </div>
     <?php if ($user->uid == $uid || user_access('administer users')): ?>
-      <?php $image_array = array(
-          'path' => "/sites/all/themes/castem/images/user_edit.png",
-          'alt' => 'edit profile',
-          'title' => 'edit this profile',
-          'attributes' => array('class' => 'edit-profile-img'),
-        ); ?>
-        <div class="edit-user"><a href="<?php print $edit_path?>">
-          <?php print theme_image($image_array); ?>
-          Edit Profile</a></div>
+      <div class="edit-user"><a href="<?php print $edit_path?>"><?php 
+        print theme_image($edit_image); ?>&nbsp;Edit Profile</a>
+      </div>
     <?php endif; ?>
   </div>
   <div class="clear"></div>
@@ -36,11 +43,30 @@
     <aside id="lesson-plans">
       <div class="header">
         <h3>Lesson Plans</h3>
+        <?php if ($user->uid == $uid): ?>
+          <a class ="add-lesson" 
+            href="#overlay=node/add/lesson-plan"><?php 
+            print theme_image($add_image); ?></a>
+        <?php endif; ?>
       </div>
       <div class="content">
         <?php
-          $lesson_plans = views_embed_view('lesson_plans', 'block');
-          print render($lesson_plans); ?>
+          $query = new EntityFieldQuery;
+          $count = $query->entityCondition('entity_type', 'node')
+            ->entityCondition('bundle', 'lesson_plan')
+            ->propertyCondition('status', 1) // Getting published nodes only.
+            ->propertyCondition('uid', $uid)
+            ->count()
+            ->execute();
+          
+          if ($count > 0) {
+            $lesson_plans = views_embed_view('lesson_plans', 'block');
+            print render($lesson_plans);
+          } else {
+            $first_name = ucwords($field_first_name[0]['value']);
+            print "<p class=\"no-lessons\">".
+              "$first_name has no published lesson plans.</p>";
+          } ?>
       </div>
     </aside>
   </div>
