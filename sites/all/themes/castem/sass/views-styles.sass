@@ -219,3 +219,70 @@ aside#lesson-plans
           position: relative
           top: 1px
 
+/* Lesson Plan List */
+div.view-filters
+  div.form-item
+    float: left
+    margin: 3px 5px 0px 0px
+  div.views-submit-button
+    float: left
+div.views-buttons
+  float: right
+  div.views-submit-button, div.views-reset-button
+    margin: 0
+    padding: 0
+    float: left
+    position: relative
+    bottom: 7px
+    input
+      padding: 5px
+
+div.view-list-lesson-plans
+  div.views-row
+    border-top: 1px $mines_blue solid
+    border-left: 1px $mines_blue solid
+    border-right: 1px $mines_blue solid
+  div.views-row-odd
+    background-color: $mines_light_grey
+    h2.lesson-title a
+      color: #000
+  div.views-row-even
+    background-color: $mines_dark_grey
+    color: #FFF
+    h2.lesson-title a
+      color: #FFF
+  div.views-row-last
+    border-bottom: 1px $mines_blue solid
+
+
+div.lesson-plan-listing
+  div.header
+    padding: 4px 4px 8px
+    h2.lesson-title
+      font-size: 18px
+      line-height: 18px
+      font-weight: bold
+      display: inline
+      a
+        text-decoration: none
+        &:hover
+          text-decoration: underline
+    span.grade-levels
+      float: right
+      a
+        +border-radius(12px)
+        background-color: $mines_orange
+        display: inline-block
+        color: #FFF
+        text-decoration: none
+        padding: 3px 6px
+        text-align: center
+        width: 47px
+        &:hover
+          font-weight: bold
+  p.description
+    padding: 2px 4px 4px
+  div.footer
+    padding: 2px 4px 5px
+    span.date
+      float: right

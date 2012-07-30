@@ -440,3 +440,114 @@ aside#lesson-plans div.lesson span.download-lesson a img {
   position: relative;
   top: 1px;
 }
+
+/* Lesson Plan List */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003224}}
+div.view-filters div.form-item {
+  float: left;
+  margin: 3px 5px 0px 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003227}}
+div.view-filters div.views-submit-button {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003229}}
+div.views-buttons {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003231}}
+div.views-buttons div.views-submit-button, div.views-buttons div.views-reset-button {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  bottom: 7px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003237}}
+div.views-buttons div.views-submit-button input, div.views-buttons div.views-reset-button input {
+  padding: 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003241}}
+div.view-list-lesson-plans div.views-row {
+  border-top: 1px #21314d solid;
+  border-left: 1px #21314d solid;
+  border-right: 1px #21314d solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003245}}
+div.view-list-lesson-plans div.views-row-odd {
+  background-color: #b2b4b3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003247}}
+div.view-list-lesson-plans div.views-row-odd h2.lesson-title a {
+  color: black;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003249}}
+div.view-list-lesson-plans div.views-row-even {
+  background-color: #8b8d8e;
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003252}}
+div.view-list-lesson-plans div.views-row-even h2.lesson-title a {
+  color: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003254}}
+div.view-list-lesson-plans div.views-row-last {
+  border-bottom: 1px #21314d solid;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003259}}
+div.lesson-plan-listing div.header {
+  padding: 4px 4px 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003261}}
+div.lesson-plan-listing div.header h2.lesson-title {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003266}}
+div.lesson-plan-listing div.header h2.lesson-title a {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003268}}
+div.lesson-plan-listing div.header h2.lesson-title a:hover {
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003270}}
+div.lesson-plan-listing div.header span.grade-levels {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003272}}
+div.lesson-plan-listing div.header span.grade-levels a {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  background-color: #d2492a;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 3px 6px;
+  text-align: center;
+  width: 47px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003281}}
+div.lesson-plan-listing div.header span.grade-levels a:hover {
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003283}}
+div.lesson-plan-listing p.description {
+  padding: 2px 4px 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003285}}
+div.lesson-plan-listing div.footer {
+  padding: 2px 4px 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003287}}
+div.lesson-plan-listing div.footer span.date {
+  float: right;
+}
