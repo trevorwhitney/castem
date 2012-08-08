@@ -77,51 +77,51 @@
       <div id="masthead-img">
         <div id="mines-top-nav">
           <a class="logo" href="/" >
-            <img alt="Colorado Mines" src="/sites/all/themes/castem/images/trefnylogo.gif">
+            <img alt="Colorado Mines" src="/sites/all/themes/castem/images/castemLogo.jpg">
           </a>
-        <div id="mines-menu">
-          <form style="margin:0" action="http://sponge.mines.edu/search" method="get">
-            <ul>
-              <li class="first"><a href="/Mines-Home-Link">Mines Home</a></li>
-              <li><a href="/GH-News-Events">News &amp; Events</a></li>
-              <li><a href="/GH-RSS">RSS</a></li>
-              <li><a href="/GH-Contact-Us">Contact Us</a></li>
-              <li class="no-border">
-                <script type="text/javascript">
-                (function ($) {
-                  $(document).ready(function(){
+          <div id="mines-menu">
+            <form style="margin:0" action="http://sponge.mines.edu/search" method="get">
+              <ul>
+                <li class="first"><a href="/Mines-Home-Link">Mines Home</a></li>
+                <li><a href="/GH-News-Events">News &amp; Events</a></li>
+                <li><a href="/GH-RSS">RSS</a></li>
+                <li><a href="/GH-Contact-Us">Contact Us</a></li>
+                <li class="no-border">
+                  <script type="text/javascript">
+                  (function ($) {
+                    $(document).ready(function(){
 
-                    var superfish1 = "#superfish-1 li > ul";
+                      var superfish1 = "#superfish-1 li > ul";
 
-                    $(superfish1).hide('sf-hidden');
+                      $(superfish1).hide('sf-hidden');
 
-                    $("#superfish-1 > li").hover(function() {
-                      $(this).children('ul').show(200);
-                    }, function() {
-                      $(this).children('ul').fadeOut(200);
-                      $(this).removeClass('sfHover');
+                      $("#superfish-1 > li").hover(function() {
+                        $(this).children('ul').show(200);
+                      }, function() {
+                        $(this).children('ul').fadeOut(200);
+                        $(this).removeClass('sfHover');
+                      });
+
+                      $("#searchText").focus( function() {
+                        $("#searchText").attr("value","");
+                      });
                     });
-
-                    $("#searchText").focus( function() {
-                      $("#searchText").attr("value","");
-                    });
-                  });
-                })(jQuery);
-                </script>
-                <input type="text" value="Search" class="search-text" id="search-text" name="q">
-              </li>
-              <li class="no-border">
-                <input type="submit" class="search-button" value="Submit" name="searchy">
-              </li>
-            </ul>
-            <input type="hidden" value="default_collection" name="site">
-            <input type="hidden" value="CSM_frontend" name="client">
-            <input type="hidden" value="CSM_frontend" name="proxystylesheet">
-            <input type="hidden" value="xml_no_dtd" name="output">
-          </form>
-          <span class="clear">Faculty, Staff, &amp; Current Students: Go <a href="http://inside.mines.edu/">inside.mines</a></span>
+                  })(jQuery);
+                  </script>
+                  <input type="text" value="Search" class="search-text" id="search-text" name="q">
+                </li>
+                <li class="no-border">
+                  <input type="submit" class="search-button" value="Submit" name="searchy">
+                </li>
+              </ul>
+              <input type="hidden" value="default_collection" name="site">
+              <input type="hidden" value="CSM_frontend" name="client">
+              <input type="hidden" value="CSM_frontend" name="proxystylesheet">
+              <input type="hidden" value="xml_no_dtd" name="output">
+            </form>
+            <span class="clear">Faculty, Staff, &amp; Current Students: Go <a href="http://inside.mines.edu/">inside.mines</a></span>
+          </div>
         </div>
-      </div>
         <?php /* Commenting out site logo and name
 
         <?php if ($logo): ?>
@@ -174,7 +174,7 @@
     <div id="content" class="column" role="main">
       <div id="inner-content">
         <?php print render($page['highlighted']); ?>
-        <?php /*print $breadcrumb;*/ ?>
+        <?php print $breadcrumb; ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php /*if ($title): ?>
@@ -191,36 +191,7 @@
         <?php print $feed_icons; ?>
       </div>
     </div><!-- /#content -->
-
-    <?php /* There was a second menu here
-    <div id="navigation">
-
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" role="navigation">
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see http://drupal.org/project/menu_block
-          print theme('links__system_main_menu', array(
-            'links' => $main_menu,
-            'attributes' => array(
-              'class' => array('links', 'inline', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )); ?>
-        </nav>
-      <?php endif; ?>
-
-      <?php print render($page['navigation']); ?>
-
-    </div><!-- /#navigation -->
-    */ ?>
-
+    
     <?php
       // Render the sidebars to see if there's anything in them.
       $sidebar_first  = render($page['sidebar_first']);
@@ -236,8 +207,8 @@
 
   </div><!-- /#main -->
 
-  <?php /*print render($page['footer']); */?>
+  <?php //print render($page['footer']); ?>
 
 </div><!-- /#page -->
 
-<?php print render($page['bottom']); ?>
+<?php //print render($page['bottom']); ?>

@@ -16,7 +16,7 @@
 // columns (applied as 10px of left/right padding on each column).
 $zen-column-count:  5;
 $zen-gutter-width:  20px;
-$zen-grid-width:    980px;
+$zen-grid-width:    1047px;
 
 
 // IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 2 ways:
@@ -46,6 +46,7 @@ $zen-auto-include-item-base: false;
   margin-left: auto;
   margin-right: auto;
   width: $zen-grid-width;
+  overflow: hidden;
 }
 
 /*

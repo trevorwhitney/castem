@@ -77,7 +77,7 @@
       <div id="masthead-img">
         <div id="mines-top-nav">
           <a class="logo" href="/" >
-            <img alt="Colorado Mines" src="/sites/all/themes/castem/images/trefnylogo.gif">
+            <img alt="Colorado Mines" src="/sites/all/themes/castem/images/castemLogo.jpg">
           </a>
         <div id="mines-menu">
           <form style="margin:0" action="http://sponge.mines.edu/search" method="get">

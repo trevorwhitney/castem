@@ -461,30 +461,30 @@ div.views-buttons div.views-submit-button input, div.views-buttons div.views-res
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003238}}
-div.view-list-lesson-plans div.views-row {
+div.view-lesson-plans div.views-row {
   border-top: 1px #21314d solid;
   border-left: 1px #21314d solid;
   border-right: 1px #21314d solid;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003242}}
-div.view-list-lesson-plans div.views-row-odd {
+div.view-lesson-plans div.views-row-odd {
   background-color: #b2b4b3;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003244}}
-div.view-list-lesson-plans div.views-row-odd h2.lesson-title a {
+div.view-lesson-plans div.views-row-odd h2.lesson-title a {
   color: black;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003246}}
-div.view-list-lesson-plans div.views-row-even {
+div.view-lesson-plans div.views-row-even {
   background-color: #8b8d8e;
   color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003249}}
-div.view-list-lesson-plans div.views-row-even h2.lesson-title a {
+div.view-lesson-plans div.views-row-even h2.lesson-title a {
   color: white;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/views-styles\.sass}line{font-family:\00003251}}
-div.view-list-lesson-plans div.views-row-last {
+div.view-lesson-plans div.views-row-last {
   border-bottom: 1px #21314d solid;
 }
 
