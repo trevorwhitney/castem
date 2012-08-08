@@ -106,7 +106,6 @@ div.view-news
 div.views-row-first
   margin-top: 0px
 div.news-item
-  float: left
   +pretty-orange-box
   div.header
     h2 a
@@ -118,10 +117,8 @@ div.news-item
       &:hover
         text-decoration: underline
   div.content
-    float: left
     div.inner-content
       padding: 5px
-      float: left
       div.news-image
         float: left
         img
@@ -286,3 +283,47 @@ div.lesson-plan-listing
     padding: 2px 4px 5px
     span.date
       float: right
+
+
+/* Lesson Plan Template */
+div.title
+  text-align: center
+  width: 100%
+  h2
+    font-size: 30pt
+    font-weight: bold
+    color: $mines_blue
+    margin-bottom: 7px
+article.lesson-plan
+  width: 74%
+  float: left
+  div.field-name-field-summary
+    margin-bottom: 15px
+    div.field-label
+      color: $mines_orange
+      font-style: italic
+      margin-bottom: 5px
+  span.submitted
+    span
+      vertical-align: top
+      line-height: 40px
+    span.user-picture
+      margin-right: 3px
+      img
+        width: 50px
+        border: 1px $mines_orange solid
+div.lesson-plan-file
+  +pretty-blue-box
+  width: 24%
+  float: right
+  div.field
+    padding: 5px
+  div.field-name-field-lesson-plan-file
+    margin-bottom: 10px
+  div.field-name-field-grade-level
+    div.field-item
+      float: left
+      margin-right: 4px
+      margin-bottom: 3px
+  div.clear
+    margin-bottom: 10px
