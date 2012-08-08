@@ -60,7 +60,7 @@
             ->execute();
           
           if ($count > 0) {
-            $lesson_plans = views_embed_view('lesson_plans', 'block');
+            $lesson_plans = views_embed_view('fellow_lesson_plans', 'block');
             print render($lesson_plans);
           } else {
             $first_name = ucwords($field_first_name[0]['value']);

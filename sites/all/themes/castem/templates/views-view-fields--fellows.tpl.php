@@ -27,7 +27,7 @@
   //$user = user_load($fields['uid']->raw);
   //$first_name = ucwords($user->field_first_name['und'][0]['value']);
   //$last_name = ucwords($user->field_last_name['und'][0]['value']);
-  $path = "/users"."/".$fields['name']->raw;
+  $path = "/people"."/".$fields['name']->raw;
   //dpm($fields['name']);view
 ?>
 <div class="fellow">

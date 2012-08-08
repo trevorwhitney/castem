@@ -27,7 +27,7 @@
     $user = user_load($fields['uid']->raw);
     $first_name = ucwords($user->field_first_name['und'][0]['value']);
     $last_name = ucwords($user->field_last_name['und'][0]['value']);
-    $path = "/users/$user->name";
+    $path = "/people/$user->name";
 ?>
 <div class="lesson-plan-listing">
   <div class="header">

@@ -31,15 +31,16 @@
     <div class="inner-content">
       <?php print $fields['field_image']->content; ?>
       <?php print $fields['body']->content; ?>
+      <div class="clear"></div>
     </div>
   </div>
   <?php 
     $user = user_load($fields['uid']->raw);
     $first_name = ucwords($user->field_first_name['und'][0]['value']);
     $last_name = ucwords($user->field_last_name['und'][0]['value']);
-    $path = "/users/$user->name";
+    $path = "/people/$user->name";
   ?>
-  <span class="created-by"><?php 
+  <span class="created-by">Submitted by <?php 
     print "<a href=\"$path\">$first_name $last_name</a>"; ?></span>
   <span class="created-on"><?php print $fields['created']->content; ?>
 </div>
