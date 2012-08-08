@@ -23,7 +23,7 @@
    * this is the standards-compliant way to do that. */
   margin-left: auto;
   margin-right: auto;
-  width: 1047px;
+  width: 1045px;
   overflow: hidden;
 }
 
@@ -78,7 +78,7 @@
   top: 0;
   /* Move the navbar up inside #main's padding. */
   height: 3em;
-  width: 1027px;
+  width: 1025px;
 }
 
 /*
@@ -88,17 +88,17 @@
 .sidebar-first #content {
   /* Span 4 columns, starting in 2nd column from left. */
   float: right;
-  width: 817.6px;
-  margin-right: 209.4px;
-  margin-left: -1047px;
+  width: 816px;
+  margin-right: 209px;
+  margin-left: -1045px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/layouts\/fixed-width\.scss}line{font-family:\00003100}}
 .sidebar-first .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: right;
-  width: 189.4px;
+  width: 189px;
   margin-right: 0px;
-  margin-left: -209.4px;
+  margin-left: -209px;
 }
 
 /*
@@ -108,17 +108,17 @@
 .sidebar-second #content {
   /* Span 4 columns, starting in 1st column from left. */
   float: right;
-  width: 817.6px;
+  width: 816px;
   margin-right: 0px;
-  margin-left: -837.6px;
+  margin-left: -836px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/layouts\/fixed-width\.scss}line{font-family:\00003114}}
 .sidebar-second .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: right;
-  width: 189.4px;
-  margin-right: 837.6px;
-  margin-left: -1047px;
+  width: 189px;
+  margin-right: 836px;
+  margin-left: -1045px;
 }
 
 /*
@@ -128,23 +128,23 @@
 .two-sidebars #content {
   /* Span 3 columns, starting in 2nd column from left. */
   float: right;
-  width: 608.2px;
-  margin-right: 209.4px;
-  margin-left: -837.6px;
+  width: 607px;
+  margin-right: 209px;
+  margin-left: -836px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/layouts\/fixed-width\.scss}line{font-family:\00003128}}
 .two-sidebars .region-sidebar-first {
   /* Span 1 column, starting in 1st column from left. */
   float: right;
-  width: 189.4px;
+  width: 189px;
   margin-right: 0px;
-  margin-left: -209.4px;
+  margin-left: -209px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/layouts\/fixed-width\.scss}line{font-family:\00003132}}
 .two-sidebars .region-sidebar-second {
   /* Span 1 column, starting in 5th column from left. */
   float: right;
-  width: 189.4px;
-  margin-right: 837.6px;
-  margin-left: -1047px;
+  width: 189px;
+  margin-right: 836px;
+  margin-left: -1045px;
 }
