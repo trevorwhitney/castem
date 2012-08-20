@@ -194,31 +194,18 @@ body
 #header-navigation
   z-index: 999
   width: 100%
-  background-color: $mines_dark_grey
+  background-color: #FFF
+  height: 40px
+  div.region
+    div.block
+      margin: 0
+      margin-bottom: 0
 
-  /* Superfish Overrides */
-  #block-superfish-1
-    width: 1047px
-    margin: 0 auto
+ul#superfish-1
+  height: 40px
+  li > ul
+    height: 40px
 
-  .sf-menu
-    margin-bottom: 0px
-    background-color: $mines_dark_grey
-    li
-      height: 41px
-      background-color: $mines_dark_grey
-    ul
-      position: relative
-      top: 0px
-      li
-        height: 41px
-    li:hover, li.sfHover, li.active a, a:focus, a:hover, a:active, 
-    .sf-navbar li li, .sf-navbar li ul
-      background: none repeat scroll 0 0 $mines_orange
-      color: #FFFFFF
-
-  .sf-hidden
-    display: none
 /*
  * Main (container for everything else)
  */
@@ -333,6 +320,35 @@ span.field-label /* The inline field label used by the Fences module */
 .feed-icon /* The link to the RSS or Atom feed for the current list of content */
 
 .more-link /* Aggregator, blog, and forum more link */
+
+
+/* Styles for static pages */
+div.program-page
+  h2, h3, h4, h5
+    font-weight: bold
+  h4
+    font-size: 16pt
+  div.title
+    width: 100%
+    text-align: center
+    margin-top: 20px
+    h2
+      font-size: 24pt
+      color: $mines_blue_2
+
+  div.banner
+    width: 794px
+    margin: 0 auto
+    img
+      vertical-align: middle
+      margin: 0 auto
+
+  div.program-content
+    margin: 7px 0
+    h4
+      margin: 7px 0 2px
+    p
+      margin: 7px 0
 
 /*
  * First sidebar (on left in LTR languages, on right in RTL)

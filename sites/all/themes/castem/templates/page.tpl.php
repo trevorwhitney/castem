@@ -87,27 +87,6 @@
                 <li><a href="/GH-RSS">RSS</a></li>
                 <li><a href="/GH-Contact-Us">Contact Us</a></li>
                 <li class="no-border">
-                  <script type="text/javascript">
-                  (function ($) {
-                    $(document).ready(function(){
-
-                      var superfish1 = "#superfish-1 li > ul";
-
-                      $(superfish1).hide('sf-hidden');
-
-                      $("#superfish-1 > li").hover(function() {
-                        $(this).children('ul').show(200);
-                      }, function() {
-                        $(this).children('ul').fadeOut(200);
-                        $(this).removeClass('sfHover');
-                      });
-
-                      $("#searchText").focus( function() {
-                        $("#searchText").attr("value","");
-                      });
-                    });
-                  })(jQuery);
-                  </script>
                   <input type="text" value="Search" class="search-text" id="search-text" name="q">
                 </li>
                 <li class="no-border">

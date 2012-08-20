@@ -15,13 +15,16 @@
 
 (function($){
   $.fn.superfish = function(op){
-    var sf = $.fn.superfish,
+    var sf = $.fn.superfish, o = sf.op,
       c = sf.c,
       $arrow = $(['<span class="',c.arrowClass,'"> &#187;</span>'].join('')),
       over = function(){
         var $$ = $(this), menu = getMenu($$);
         clearTimeout(menu.sfTimer);
         $$.showSuperfishUl().siblings().hideSuperfishUl();
+        if (!($$.hasClass('sf-no-children') && $$.hasClass('sf-depth-1'))) {
+          $('#header-navigation').height('80px');
+        }
       },
       out = function(){
         var $$ = $(this), menu = getMenu($$), o = sf.op;
@@ -29,7 +32,15 @@
         menu.sfTimer=setTimeout(function(){
           o.retainPath=($.inArray($$[0],o.$path)>-1);
           $$.hideSuperfishUl();
-          if (o.$path.length && $$.parents(['li.',o.hoverClass].join('')).length<1){over.call(o.$path);}
+          if (o.$path.length && $$.parents(['li.',o.hoverClass].join('')).length<1){
+            over.call(o.$path);
+          }
+          if ((o.$path.hasClass('sf-no-children') && o.$path.hasClass('sf-depth-1'))
+            || o.$path.length < 1) {
+            $('#header-navigation').height('40px');
+          } else {
+            $('#header-navigation').height('80px');
+          }
         },o.delay);
       },
       getMenu = function($menu){
@@ -37,7 +48,7 @@
         sf.op = sf.o[menu.serial];
         return menu;
       },
-      addArrow = function($a){ $a.addClass(c.anchorClass).append($arrow.clone()); };
+      addArrow = function($a){ $a.addClass(c.anchorClass).appepathLevelsnd($arrow.clone()); };
 
     return this.each(function() {
       var s = this.serial = sf.o.length;
@@ -46,6 +57,12 @@
         $(this).addClass([o.hoverClass,c.bcClass].join(' '))
           .filter('li:has(ul)').removeClass(o.pathClass);
       });
+      if ((o.$path.hasClass('sf-no-children') && o.$path.hasClass('sf-depth-1'))
+        || o.$path.length < 1) {
+        $('#header-navigation').height('40px');
+      } else {
+        $('#header-navigation').height('80px');
+      }
       sf.o[s] = sf.op = o;
 
       $('li:has(ul)',this)[($.fn.hoverIntent && !o.disableHI) ? 'hoverIntent' : 'hover'](over,out).each(function() {
