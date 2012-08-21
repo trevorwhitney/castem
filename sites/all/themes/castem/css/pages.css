@@ -548,6 +548,81 @@ div.program-page div.program-content p {
  * Remember to NOT add padding or margin to your .region-sidebar-second
  * (see the layout.css file.)
  */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003377}}
+aside#user-login {
+  padding-top: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000367}}
+aside#user-login div.header {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 -2px 3px 0 inset, rgba(0, 0, 0, 0.3) 0 1px 3px 0;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 -2px 3px 0 inset, rgba(0, 0, 0, 0.3) 0 1px 3px 0;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 -2px 3px 0 inset, rgba(0, 0, 0, 0.3) 0 1px 3px 0;
+  height: 35px;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000371}}
+aside#user-login div.header h2, aside#user-login div.header h3 {
+  color: white;
+  display: block;
+  float: left;
+  line-height: 1em;
+  margin: 5px 0 0 3px;
+  font-weight: bold;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000378}}
+aside#user-login div.header h2 {
+  font-size: 20pt;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000380}}
+aside#user-login div.header h3 {
+  font-size: 16pt;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000382}}
+aside#user-login div.content {
+  margin: 0 0 0 0;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 1px;
+  border-top: none;
+  background-color: #d4d4d5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\0000399}}
+aside#user-login div.header {
+  background: url("../images/swirls.png") repeat scroll 0 0 rgba(38, 63, 106, 0.9);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/_custom\.sass}line{font-family:\00003101}}
+aside#user-login div.content {
+  border-right: 2px solid rgba(38, 63, 106, 0.4);
+  border-left: 2px solid rgba(38, 63, 106, 0.4);
+  border-bottom: 2px solid rgba(38, 63, 106, 0.4);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003380}}
+aside#user-login .content {
+  padding: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003382}}
+aside#user-login .form-item, aside#user-login .form-actions {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003384}}
+aside#user-login .form-item-name {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003387}}
+aside#user-login .form-item-pass {
+  padding-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003389}}
+aside#user-login .links {
+  padding-top: 10px;
+  font-size: 8pt;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/castem\/sites\/all\/themes\/castem\/sass\/pages\.sass}line{font-family:\00003392}}
+aside#user-login input {
+  width: 165px;
+}
+
 /* Footer
  */
 /* Page bottom
